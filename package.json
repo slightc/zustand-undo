@@ -1,0 +1,30 @@
+{
+  "name": "zustand-undo",
+  "version": "1.0.0",
+  "exports": {
+    "import": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.mjs"
+    },
+    "require": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "main": "./lib/index.js",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "zustand undo plugin",
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "zustand": "^4.5.4"
+  }
+}
