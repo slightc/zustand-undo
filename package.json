@@ -1,6 +1,14 @@
 {
   "name": "zustand-undo",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "author": "slightc",
+  "homepage": "https://github.com/slightc/zustand-undo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slightc/zustand-undo.git"
+  },
+  "license": "MIT",
+  "description": "zustand undo plugin",
   "exports": {
     "import": {
       "types": "./lib/index.d.ts",
@@ -14,12 +22,13 @@
   "main": "./lib/index.js",
   "module": "./lib/index.mjs",
   "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
   },
-  "author": "",
-  "license": "MIT",
-  "description": "zustand undo plugin",
   "devDependencies": {
     "tsup": "^8.1.0",
     "typescript": "^5.5.3"
